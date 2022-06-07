@@ -7,7 +7,7 @@ This action runs [cp-all-in-one](https://github.com/confluentinc/cp-all-in-one/t
 - `service`: up to which service in the docker-compose.yml file to run.  Default is none, so all services are run
 - `github-branch-version`: which GitHub branch of [cp-all-in-one](https://github.com/confluentinc/cp-all-in-one) to run.  Default is `latest`.
 
-Example to run ZooKeeper and broker on Confluent Platform `7.1.0`:
+Example to run ZooKeeper and Confluent Server on Confluent Platform `7.1.0`:
 
 ```yaml
 
