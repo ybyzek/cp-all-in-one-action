@@ -15,7 +15,7 @@ Example to run ZooKeeper and Confluent Server on Confluent Platform `7.1.0`:
     steps:
 
       - name: Run Confluent Platform (Confluent Server)
-        uses: ./.github/actions/cp-all-in-one
+        uses: ybyzek/cp-all-in-one-action@v0.2
         with:
           service: broker
           github-branch-version: 7.1.0-post
@@ -28,6 +28,6 @@ Example to run all Apache Kafka services on `latest`:
     steps:
 
       - name: Run Confluent Platform (Confluent Server)
-        uses: ./.github/actions/cp-all-in-one
+        uses: ybyzek/cp-all-in-one-action@v0.2
           type: cp-all-in-one-community
 ```
