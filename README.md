@@ -6,6 +6,7 @@ This action runs [cp-all-in-one](https://github.com/confluentinc/cp-all-in-one/t
 
 - `service`: up to which service in the docker-compose.yml file to run.  Default is none, so all services are run
 - `github-branch-version`: which GitHub branch of [cp-all-in-one](https://github.com/confluentinc/cp-all-in-one) to run.  Default is `latest`.
+- `type`: cp-all-in-one (based on Confluent Server) or cp-all-in-one-community (based on Apache Kafka)
 
 Example to run ZooKeeper and Confluent Server on Confluent Platform `7.1.0`:
 
@@ -20,7 +21,7 @@ Example to run ZooKeeper and Confluent Server on Confluent Platform `7.1.0`:
           github-branch-version: 7.1.0-post
 ```
 
-Example to run all services on `latest`:
+Example to run all Apache Kafka services on `latest`:
 
 ```yaml
 
@@ -28,4 +29,5 @@ Example to run all services on `latest`:
 
       - name: Run Confluent Platform (Confluent Server)
         uses: ./.github/actions/cp-all-in-one
+          type: cp-all-in-one-community
 ```
