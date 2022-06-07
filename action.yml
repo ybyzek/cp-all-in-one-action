@@ -1,4 +1,4 @@
-name: 'Run Confluent cp-all-in-one'
+name: 'Run Kafka with Confluent cp-all-in-one'
 description: 'Setup Confluent cp-all-in-one'
 author: 'ybyzek'
 inputs:
