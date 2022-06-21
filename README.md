@@ -31,3 +31,20 @@ Example to run all Apache Kafka services on `latest`:
         uses: ybyzek/cp-all-in-one-action@v0.2.1
           type: cp-all-in-one-community
 ```
+
+# Ports
+
+To connect to services in Docker, refer to the following ports:
+
+- ZooKeeper: 2181
+- Kafka broker: 9092
+- Kafka broker JMX: 9101
+- Confluent Schema Registry: 8081
+- Kafka Connect: 8083
+- Confluent Control Center: 9021
+- ksqlDB: 8088
+- Confluent REST Proxy: 8082
+
+# Example
+
+Example usage at https://github.com/ybyzek/kafka-github-actions
